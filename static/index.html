@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Watcher</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>File Watcher</h1>
+    <label for="directory">Directory to watch:</label>
+    <input type="text" id="directory" placeholder="e.g., C:/Users/Pepito/Desktop/fileWatcher" />
+    <button onclick="startWatching()">Start Watching</button>
+    <textarea id="events" readonly placeholder="Events will appear here..."></textarea>
+
+    <!-- Gráfico de Distribución de Tipos de Eventos -->
+    <div>
+        <h2>Distribución de Tipos de Eventos</h2>
+        <canvas id="eventTypeChart" width="400" height="200"></canvas>
+    </div>
+
+    <!-- Gráfico de Eventos por Día y Hora -->
+    <div>
+        <h2>Eventos por Día y Hora</h2>
+        <canvas id="eventTimeChart" width="400" height="200"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
