@@ -2,6 +2,14 @@
 
 File Watcher es una aplicación desarrollada en  Go (Golang)  con el framework Fiber, que permite monitorear en tiempo real los cambios en un directorio y sus subdirectorios. Los eventos detectados, como creación, modificación y eliminación de archivos, se registran en una base de datos PostgreSQL y se muestran con una interfaz gráfica accesible desde el navegador.
 
+## Imágenes de la Aplicación
+
+### Gráfica de Eventos por Tipo
+![Gráfica de Eventos por Tipo](filewatcher.png)
+
+### Historial de Eventos por Dias
+![Historial de Eventos](event.png)
+
 ## 🛠 Tecnologías Utilizadas
 Go (Golang): Lenguaje principal de desarrollo.
 Fiber: Framework para manejar el servidor HTTP.
